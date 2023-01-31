@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
         text: "DEV",
         textColor: Colors.white,
         backgroundColor: Colors.red,
+        visible: true,
         child: HomePage()
       ),
     );

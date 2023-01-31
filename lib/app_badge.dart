@@ -10,16 +10,21 @@ class AppBadge extends StatelessWidget {
     required this.backgroundColor,
     required this.textColor,
     required this.text,
+    this.visible = true,
     required this.child,
   });
 
   final Color backgroundColor;
   final Color textColor;
   final String text;
+  final bool visible;
   final Widget child;
 
   @override
   Widget build(BuildContext context) {
+    if (!visible) {
+      return child;
+    }
     return Stack(
       children: [
         child,
