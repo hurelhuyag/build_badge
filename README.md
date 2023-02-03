@@ -64,6 +64,10 @@ class MyApp extends StatelessWidget {
 }
 ```
 
+## Result
+
+![Screencast](screencast.png)
+
 ## Additional information
 
 If you have idea in your mind, Feel free to open an issue or pull request.
