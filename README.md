@@ -11,7 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-Very simple another App Badge Library
+# Very simple another App Badge Library ![workflow](https://github.com/hurelhuyag/app_badge/actions/workflows/ci.yaml/badge.svg)
 
 ## Features
 
