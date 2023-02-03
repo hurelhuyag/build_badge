@@ -22,28 +22,44 @@ Very simple another App Badge Library
 
 ## Getting started
 
-See example
+### Add dependency to pubspec.yaml
+```yaml
+  app_badge:
+    git: git@github.com:hurelhuyag/app_badge.git
+```
+
+###
+
+Fetch dependencies
+```
+flutter pub get
+```
 
 ## Usage
 
 to `/example` folder.
 
 ```dart
+void main() {
+  runApp(const MyApp());
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'App Badge Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const AppBadge(
-        text: "STAGING",
-        textColor: Colors.white,
-        backgroundColor: Colors.red,
-        child: HomePage()
+    return AppBadge(
+      text: "DEV",
+      textColor: Colors.white,
+      backgroundColor: Colors.red,
+      visible: true,
+      child: MaterialApp(
+        title: 'App Badge Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const HomePage(),
       ),
     );
   }

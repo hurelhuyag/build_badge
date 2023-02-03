@@ -12,17 +12,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'App Badge Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const AppBadge(
-        text: "DEV",
-        textColor: Colors.white,
-        backgroundColor: Colors.red,
-        visible: true,
-        child: HomePage()
+    return AppBadge(
+      text: "DEV",
+      textColor: Colors.white,
+      backgroundColor: Colors.red,
+      visible: true,
+      child: MaterialApp(
+        title: 'App Badge Demo',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const HomePage(),
       ),
     );
   }

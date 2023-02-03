@@ -1,21 +1,12 @@
-import 'package:example/another_page.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class AnotherPage extends StatelessWidget {
+  const AnotherPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("HomePage"),
-        actions: [
-          IconButton(
-            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const AnotherPage())),
-            icon: const Icon(Icons.pages),
-          ),
-        ],
-      ),
+      appBar: AppBar(title: const Text("Another Page"),),
       body: Stack(
         children: [
           SingleChildScrollView(

@@ -25,23 +25,29 @@ class AppBadge extends StatelessWidget {
     if (!visible) {
       return child;
     }
-    return Stack(
-      children: [
-        child,
-        Positioned(
-          top: 0,
-          left: 0,
-          width: 50,
-          height: 50,
-          child: CustomPaint(
-            painter: BannerPainter(
-              backgroundColor: backgroundColor,
-              textColor: textColor,
-              text: text,
+    return Directionality(
+      textDirection: TextDirection.ltr,
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          child,
+          Positioned(
+            top: 0,
+            left: 0,
+            width: 50,
+            height: 50,
+            child: IgnorePointer(
+              child: CustomPaint(
+                painter: BannerPainter(
+                  backgroundColor: backgroundColor,
+                  textColor: textColor,
+                  text: text,
+                ),
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
