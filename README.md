@@ -28,9 +28,7 @@ Very simple another App Badge Library
     git: git@github.com:hurelhuyag/app_badge.git
 ```
 
-###
-
-Fetch dependencies
+### Fetch dependencies
 ```
 flutter pub get
 ```
