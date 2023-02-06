@@ -38,6 +38,8 @@ flutter pub get
 to `/example` folder.
 
 ```dart
+const String env = String.fromEnvironment("env", defaultValue: "dev");
+
 void main() {
   runApp(const MyApp());
 }
@@ -48,10 +50,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBadge(
-      text: "DEV",
       textColor: Colors.white,
       backgroundColor: Colors.red,
-      visible: true,
+      text: env.toUpperCase(),
+      visible: env != "prod",
       child: MaterialApp(
         title: 'App Badge Demo',
         theme: ThemeData(
@@ -63,6 +65,9 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+
+When you change `--dart-define="env=dev"` parameter when building, your badge will change accordingly.
+Obviously, when the environment is the production /prod/, AppBadge will disappear.
 
 ## Result
 
