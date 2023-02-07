@@ -13,7 +13,7 @@ dependencies:
 
   cupertino_icons: ^1.0.5
 
-  app_badge:
+  build_badge:
     path: ../
 
 dev_dependencies:

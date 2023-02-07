@@ -1,4 +1,4 @@
-import 'package:app_badge/build_badge.dart';
+import 'package:build_badge/build_badge.dart';
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
