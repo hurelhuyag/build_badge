@@ -6,7 +6,9 @@ class AnotherPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Another Page"),),
+      appBar: AppBar(
+        title: const Text("Another Page"),
+      ),
       body: Stack(
         children: [
           SingleChildScrollView(
@@ -27,7 +29,8 @@ class AnotherPage extends StatelessWidget {
                 Container(
                   height: 100,
                   color: Colors.green,
-                ),Container(
+                ),
+                Container(
                   height: 100,
                   color: Colors.pink,
                 ),

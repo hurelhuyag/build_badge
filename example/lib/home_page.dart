@@ -36,7 +36,8 @@ class HomePage extends StatelessWidget {
                 Container(
                   height: 100,
                   color: Colors.green,
-                ),Container(
+                ),
+                Container(
                   height: 100,
                   color: Colors.pink,
                 ),

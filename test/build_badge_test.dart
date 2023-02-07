@@ -1,12 +1,10 @@
+import 'package:build_badge/build_badge.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:build_badge/build_badge.dart';
-
 void main() {
   testWidgets('run', (tester) async {
-    await tester.pumpWidget(
-      BuildBadge(
+    await tester.pumpWidget(BuildBadge(
         backgroundColor: const Color(0xFFFF0000),
         textColor: const Color(0xFF000000),
         text: "DEV",
@@ -24,11 +22,9 @@ void main() {
               child: Text("Hello AppBadge World!"),
             ),
           ),
-        )
-      )
-    );
+        )));
 
-    var d = find.byType(BuildBadge);
+    final d = find.byType(BuildBadge);
     expect(d, findsOneWidget);
   });
 }

@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       backgroundColor: Colors.red,
       visible: true,
       child: MaterialApp(
-        title: 'App Badge Demo',
+        title: 'Build Badge Demo',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.blue,

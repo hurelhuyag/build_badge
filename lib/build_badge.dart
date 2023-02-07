@@ -4,6 +4,7 @@ import 'dart:ui';
 
 import 'package:flutter/widgets.dart';
 
+/// This is The BuildBadge. You should use it over the MaterialApp or CupertinoApp.
 class BuildBadge extends StatelessWidget {
   const BuildBadge({
     super.key,
@@ -53,7 +54,6 @@ class BuildBadge extends StatelessWidget {
 }
 
 class BannerPainter extends CustomPainter {
-
   final Color backgroundColor;
   final Color textColor;
   final String text;
@@ -66,28 +66,23 @@ class BannerPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final Paint paint = Paint()
-      ..color = backgroundColor;
+    final paint = Paint()..color = backgroundColor;
 
-    final vertices = Vertices(
-        VertexMode.triangles,
-        const [
-          Offset(30, 0),
-          Offset(52, 0),
-          Offset(0, 52),
-          Offset(0, 52),
-          Offset(0, 30),
-          Offset(30, 0)
-        ],
-        colors: [
-          backgroundColor,
-          backgroundColor,
-          backgroundColor,
-          backgroundColor,
-          backgroundColor,
-          backgroundColor,
-        ]
-    );
+    final vertices = Vertices(VertexMode.triangles, const [
+      Offset(30, 0),
+      Offset(52, 0),
+      Offset(0, 52),
+      Offset(0, 52),
+      Offset(0, 30),
+      Offset(30, 0)
+    ], colors: [
+      backgroundColor,
+      backgroundColor,
+      backgroundColor,
+      backgroundColor,
+      backgroundColor,
+      backgroundColor,
+    ]);
 
     canvas.drawVertices(vertices, BlendMode.src, paint);
 
