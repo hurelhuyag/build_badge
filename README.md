@@ -11,7 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-# Very simple another App Badge Library ![workflow](https://github.com/hurelhuyag/app_badge/actions/workflows/ci.yaml/badge.svg)
+# Very simple another Build Badge Library ![workflow](https://github.com/hurelhuyag/build_badge/actions/workflows/ci.yaml/badge.svg)
 
 ## Features
 
@@ -24,8 +24,8 @@ and the Flutter guide for
 
 ### Add dependency to pubspec.yaml
 ```yaml
-  app_badge:
-    git: git@github.com:hurelhuyag/app_badge.git
+dependencies:
+  build_badge: ^0.0.2
 ```
 
 ### Fetch dependencies
@@ -49,13 +49,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBadge(
+    return BuildBadge(
       textColor: Colors.white,
       backgroundColor: Colors.red,
       text: env.toUpperCase(),
       visible: env != "prod",
       child: MaterialApp(
-        title: 'App Badge Demo',
+        title: 'Build Badge Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
 ```
 
 When you change `--dart-define="env=dev"` parameter when building, your badge will change accordingly.
-Obviously, when the environment is the production /prod/, AppBadge will disappear.
+Obviously, when the environment is the production /prod/, BuildBadge will disappear.
 
 ## Result
 
