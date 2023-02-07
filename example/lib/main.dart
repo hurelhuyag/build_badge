@@ -1,4 +1,4 @@
-import 'package:app_badge/app_badge.dart';
+import 'package:app_badge/build_badge.dart';
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBadge(
+    return BuildBadge(
       text: "DEV",
       textColor: Colors.white,
       backgroundColor: Colors.red,

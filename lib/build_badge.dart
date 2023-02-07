@@ -4,8 +4,8 @@ import 'dart:ui';
 
 import 'package:flutter/widgets.dart';
 
-class AppBadge extends StatelessWidget {
-  const AppBadge({
+class BuildBadge extends StatelessWidget {
+  const BuildBadge({
     super.key,
     required this.backgroundColor,
     required this.textColor,
