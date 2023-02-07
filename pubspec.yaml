@@ -1,6 +1,6 @@
 name: build_badge
 description: Badge to distinguish different builds. Such as staging, dev, production etc
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/hurelhuyag/app_badge
 
 environment:

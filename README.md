@@ -11,7 +11,9 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-# Very simple another Build Badge Library ![workflow](https://github.com/hurelhuyag/build_badge/actions/workflows/ci.yaml/badge.svg)
+# Build Badge ![workflow](https://github.com/hurelhuyag/build_badge/actions/workflows/ci.yaml/badge.svg)
+
+You can't distinguish different build no hassle. just use `--dart-define='env=staging'` parameter.
 
 ## Features
 
